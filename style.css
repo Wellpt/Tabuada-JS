@@ -1,10 +1,21 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
-
+body {
+    background: linear-gradient(to right, rgb(137, 163, 180), rgb(230, 230, 218));
+    font: normal 15pt arial;
+}
+header {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 h2 {
-    color: red;
+    color: rgb(19, 7, 7);
+    justify-content: center;
 }
 div {
     margin: 20px;
@@ -14,9 +25,57 @@ div {
 button {
     margin-left: 10px;
     padding: 5px;
+    border-radius: 10px;
+    border: none;
 }
 button:hover {
-    background-color: red;
+    background-color: black;
     color: white;
     transition: 1s;
+}
+#select {
+    width: 50%;
+   
+}
+#seltab {
+    width: 80%;
+    font-size: 20px;
+}
+
+p {
+    background: white;
+    padding: 0 5px 0 5px;
+}
+#seltab option {
+    padding: 5px 5px;
+}
+div.container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+@media (max-width: 640px) {
+    #select{
+        width: 100%;
+    }
+    #seltab {
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+   
+    div.botao {
+        display: block;
+    }
+    div.botao button {
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+    p{
+        padding-bottom: 5px;
+    }
 }

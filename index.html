@@ -8,13 +8,22 @@
     <title>Tabuada</title>
 </head>
 <body>
-    <div>
+    <header>
         <h2>Calcular Tabuada</h2>
-    </div>
-    <div>        
-        <input type="number" id="tabu" placeholder="Qual Tabuada?">
-        <button type="submit" onclick="abrir()">Calcular</button>
-    </div>
+    </header>
+    <main>
+        <div class="container">
+                <div class="botao">        
+                    <p><input type="number" id="tabu" placeholder=" Qual Tabuada? "></p>
+                    <button type="button" onclick="abrir()">Calcular</button>
+                </div>
+                <div id="select">
+                    <select name="tabuada" id="seltab" size="10">
+                        <option>Digite um numero a cima:</option>
+                    </select>
+                </div>
+        </div>
+    </main>
 </body>
 <script src="app.js"></script>
 </html>
